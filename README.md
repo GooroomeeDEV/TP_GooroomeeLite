@@ -1,0 +1,112 @@
+# TP_GooroomeeLite
+
+# GooroomeeLite- Android
+
+개발 기간 : 2021년 6월 1일 ~ 2021년 7월 30일
+
+---
+
+## **[ About ]**
+
+**캠 스터디 구루미의 혼공버전을 지원하는 서비스**
+
+기존의 캠 스터디인 구루미에서 캠 없이 혼자 공부하는것을 기록할수 있는 혼공족을 위한 
+스터디메이트 앱 입니다.
+
+정보 제공 방식은 다음과 같습니다.
+
+- 타이머를 이용한 공부 기록
+- 서비스를 이용한 미디어 플레이어 기능
+- 프로필 수정, 플레이스토어 연결 기능
+- 공유, 카메라, 스티커 기능
+- 그래프를 이용한 공부 데이터 정리 기능
+
+---
+
+## **[ Preview ]**
+
+GooroomeeLite PDF 예정
+
+---
+
+대략적인 PDF 이미지 프리뷰
+
+## **[ Develop Environment ]**
+
+- Language : Kotlin
+- Android Depolyment Target : Android 6.0(Mashmallow)
+
+---
+
+## **[ Library ]**
+
+1. Server
+- Firebasedatabase
+- Firebasestorage
+
+ 2.   Layout
+
+
+
+ 3. Function
+
+
+
+---
+
+## **[ Role ]**
+
+- Statistic Page
+
+- Share Page
+
+---
+### **[ Feature Implementation ]**
+
+- 스톱워치 페이지
+
+  - FireBase를 이용한 데이터 연동 구현
+
+- 통계페이지 구현
+    
+    - Tap Layout 구현
+
+    — 일간 페이지
+      
+       - ViewModel를 사용하여 firebase와 연동 
+
+    — 주간 페이지
+    
+      - button 클릭 시 주간,월간 날짜 이동 구현
+    
+    — 월간 페이지
+    
+    - MpAndroidChart를 이용한 barchart, stackChart, pieChart Custom
+    
+    - 카메라 가져오기 시 Permission 구현
+
+- 공유 페이지 구현
+
+      — 카메라 기능 구현
+
+      — 화면 회전
+      
+      — 최신 이미지 가져오기
+      
+      - 사진에 frame 씌우기
+      
+- 플레이스토어 연결
+
+---
+
+### **[ Tools ]**
+
+- AndroidStudio
+
+- Figma
+
+- Slack
+
+- Github
+
+- Notion
