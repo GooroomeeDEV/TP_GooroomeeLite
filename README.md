@@ -70,6 +70,8 @@ GooroomeeLite PDF 예정
 
 - Share Page
 
+- Sticker Page
+
 ---
 ### **[ Feature Implementation ]**
 
@@ -77,37 +79,54 @@ GooroomeeLite PDF 예정
 
   - FireBase와 스톱워치 시간 데이터 연동 
 
+- FirebaseData와 연동하여 데이터 관리
+
+   - MVVM패턴으로 ViewModeal를 시용하여 livedata와 dataBinding으로 일간,주간,월간 실시간 연동
+  
+   - 스티커 페이지에서 공부시간 기록
+
 - 통계 페이지 구현
     
-    - Tap Layout 구현
+    - Tap Layout 
 
-    — 일간,주간,월간 페이지
+    — 일간,주간,월간 페이지 
+    
+      - LocalDataTime에서 날짜 분류 작업 
       
-      - button 클릭 시 주간,월간 날짜 이동 구현
+      - button 클릭 시 주간, 월간 날짜 이동 구현
       
       - MpAndroidChart를 이용한 barchart, stackChart, pieChart Custom
 
-    
-    
-    
-    — 월간 페이지
-    
-    - MpAndroidChart를 이용한 barchart, stackChart, pieChart Custom
-    
-    - 카메라 가져오기 시 Permission 구현
+    — 주간 페이지 
+ 
+      - MpAndroidChart에서 Limit Line(제한선) 구현
+
+
+    — PieChart(원 차트)
+ 
+      - Adapter와 PieChart를 연동하여 일간 공부시간 나타내기
 
 - 공유 페이지 구현
 
-      — 카메라 기능 구현
+      — 카메라 기능 
+      
+      - 캡처 버튼 리스너 등록
 
-      — 화면 회전
+      — 카메라 전환(앞면/후면)
       
-      — 최신 이미지 가져오기
+      - 카메라 줌 기능 구현
       
-      - 사진에 frame 씌우기
+      — 외부 저장소에서 가장 최근의 사진을 가져오기
       
-- 플레이스토어 연결
+      
+- 스티커 페이지 구현
 
+      — 사진에 Sticker 설정
+
+      — 프레임 씌어진 공유하기 
+      
+      - Glide를 이용하여 사진 이미지 수정
+     
 ---
 
 ### **[ Tools ]**
