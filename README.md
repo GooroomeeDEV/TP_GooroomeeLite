@@ -87,9 +87,9 @@ GooroomeeLite PDF 예정
 
 - 통계 페이지 구현
     
-    - Tap Layout 
+  - Tap Layout 
 
-    — 일간,주간,월간 페이지 
+  — 일간,주간,월간 페이지 
     
       - LocalDataTime에서 날짜 분류 작업 
       
@@ -97,12 +97,12 @@ GooroomeeLite PDF 예정
       
       - MpAndroidChart를 이용한 barchart, stackChart, pieChart Custom
 
-    — 주간 페이지 
+  — 주간 페이지 
  
       - MpAndroidChart에서 Limit Line(제한선) 구현
 
 
-    — PieChart(원 차트)
+  — PieChart(원 차트)
  
       - Adapter와 PieChart를 연동하여 일간 공부시간 나타내기
 
