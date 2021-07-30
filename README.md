@@ -45,17 +45,19 @@ GooroomeeLite PDF 예정
 - Firebasestorage
 
  2.   Layout
-- Glide
-- LocalDataTime
-- ScreenShot
-- ViewPager2
-- CameraX 
-- PhilJay:MPAndroidChart
-- Color Picker
+
+- [Glide](https://github.com/bumptech/glide)
+- [ScaleRatingBar](https://github.com/williamyyu/SimpleRatingBar)
+- [gridlayout](https://mvnrepository.com/artifact/androidx.gridlayout/gridlayout/1.0.0-rc01)
+- ConstraintLayout
+- RelativeLayout
+- [ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2?hl=ko)
 
  3. Function
-- Firebasedatabase
-- Firebasestorage
+
+- [TedPermission](https://github.com/ParkSangGwon/TedPermission)
+- [ColorPicker](https://github.com/Dhaval2404/ColorPicker)
+- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
 
 
 ---
@@ -71,21 +73,22 @@ GooroomeeLite PDF 예정
 ---
 ### **[ Feature Implementation ]**
 
-- 스톱워치 페이지
+- 스톱워치 페이지 데이터 연동 구현
 
-  - FireBase를 이용한 데이터 연동 구현
+  - FireBase와 스톱워치 시간 데이터 연동 
 
-- 통계페이지 구현
+- 통계 페이지 구현
     
     - Tap Layout 구현
 
-    — 일간 페이지
+    — 일간,주간,월간 페이지
       
-       - ViewModel를 사용하여 firebase와 연동 
-
-    — 주간 페이지
-    
       - button 클릭 시 주간,월간 날짜 이동 구현
+      
+      - MpAndroidChart를 이용한 barchart, stackChart, pieChart Custom
+
+    
+    
     
     — 월간 페이지
     
