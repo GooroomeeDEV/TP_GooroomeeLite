@@ -89,22 +89,22 @@ GooroomeeLite PDF 예정
     
   - Tap Layout 
 
-  — 일간,주간,월간 페이지 
+  - 일간,주간,월간 페이지
     
-      - LocalDataTime에서 날짜 분류 작업 
-      
-      - button 클릭 시 주간, 월간 날짜 이동 구현
-      
-      - MpAndroidChart를 이용한 barchart, stackChart, pieChart Custom
+        - LocalDataTime에서 날짜 분류 작업 
+       
+        - button 클릭 시 주간, 월간 날짜 이동 구현
+       
+        - MpAndroidChart를 이용한 barchart, stackChart, pieChart Custom
 
-  — 주간 페이지 
+  - 주간 페이지
  
-      - MpAndroidChart에서 Limit Line(제한선) 구현
+        - MpAndroidChart에서 Limit Line(제한선) 구현
 
 
-  — PieChart(원 차트)
+  - PieChart(원 차트)
  
-      - Adapter와 PieChart를 연동하여 일간 공부시간 나타내기
+        - Adapter와 PieChart를 연동하여 일간 공부시간 나타내기
 
 - 공유 페이지 구현
 
