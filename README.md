@@ -45,16 +45,24 @@ GooroomeeLite PDF 예정
 - Firebasestorage
 
  2.   Layout
-
-
+- Glide
+- LocalDataTime
+- ScreenShot
+- ViewPager2
+- CameraX 
+- PhilJay:MPAndroidChart
+- Color Picker
 
  3. Function
-
+- Firebasedatabase
+- Firebasestorage
 
 
 ---
 
 ## **[ Role ]**
+
+- FirebaseData Management
 
 - Statistic Page
 
