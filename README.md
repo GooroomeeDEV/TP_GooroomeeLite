@@ -78,12 +78,12 @@ GooroomeeLite PDF 예정
 - 스톱워치 페이지 데이터 연동 구현
 
   - FireBase와 스톱워치 시간 데이터 연동 
-
+  
 - FirebaseData와 연동하여 데이터 관리
 
    - MVVM패턴으로 ViewModeal를 시용하여 livedata와 dataBinding으로 일간,주간,월간 실시간 연동
   
-   - 스티커 페이지에서 공부시간 기록
+   - 스티커 페이지에서 공부시간 기록 연동
 
 - 통계 페이지 구현
     
@@ -124,8 +124,6 @@ GooroomeeLite PDF 예정
       — 사진에 Sticker 설정
 
       — 오늘 공부한 시간 프레임 씌어진 사진 공유하기 
-      
-      - Glide를 이용하여 사진 이미지 수정
      
 ---
 
