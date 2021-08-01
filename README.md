@@ -10,7 +10,7 @@
 
 **캠 스터디 구루미의 혼공버전을 지원하는 서비스**
 
-기존의 캠 스터디인 구루미에서 캠 없이 혼자 공부하는것을 기록할수 있는 혼공족을 위한 
+기존의 캠 스터디인 구루미에서 캠 없이 혼자 공부하는것을 기록할 수 있는 혼공족을 위한 
 스터디메이트 앱 입니다.
 
 정보 제공 방식은 다음과 같습니다.
@@ -81,7 +81,7 @@ GooroomeeLite PDF 예정
   
 - FirebaseData와 연동하여 데이터 관리
 
-   - MVVM패턴으로 ViewModeal를 시용하여 livedata와 dataBinding으로 일간,주간,월간 실시간 연동
+   - MVVM패턴으로 ViewModeal를 사용하여 livedata와 dataBinding으로 일간,주간,월간 실시간 연동
   
    - 스티커 페이지에서 공부시간 기록 연동
 
@@ -93,7 +93,7 @@ GooroomeeLite PDF 예정
     
         - LocalDataTime에서 날짜 분류 작업 
        
-        - button 클릭 시 주간, 월간 날짜 이동 구현
+        - button 클릭 시 주간,월간 날짜 이동 구현
        
         - MpAndroidChart를 이용한 barchart, stackChart, pieChart Custom
 
@@ -104,7 +104,7 @@ GooroomeeLite PDF 예정
 
   - PieChart(원 차트)
  
-        - Adapter와 PieChart를 연동하여 일간 공부시간 나타내기
+        - RecyclerView Adapter와 PieChart를 연동하여 일간 공부시간 나타내기
 
 - 공유 페이지 구현
 
