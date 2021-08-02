@@ -339,12 +339,15 @@ class ProfileUpdateActivity : AppCompatActivity() {
                         Log.d("TAG", "그림파일 만드는도중 에러생김")
                         null
                     }
+                Log.d("sdfhgsdf1",photoFile.toString())
 
                 // 그림파일을 성공적으로 만들었다면 onActivityForResult로 보내기
                 photoFile?.also {
                     val photoUri: Uri = FileProvider.getUriForFile(
                         this, "kr.co.gooroomeelite.fileprovider", it
                     )
+                    Log.d("sdfhgsdf3",photoUri.toString())
+
                     takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
                     startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
                 }
@@ -354,17 +357,23 @@ class ProfileUpdateActivity : AppCompatActivity() {
 
     // 카메라로 촬영한 이미지를 파일로 저장해준다
     @Throws(IOException::class)
-    private fun createImageFile(): File {
-        // Create an image file name
+    private fun createImageFile(): File? {
+        val mediaDir = externalMediaDirs.firstOrNull()?.let {
+            File(it, getString(R.string.app_name_picture)).apply {
+                mkdirs()
+            }
+        }
         val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
         val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        return File.createTempFile(
+        File.createTempFile(
             "JPEG_${timeStamp}_", /* prefix */
             ".jpg", /* suffix */
             storageDir /* directory */
         ).apply {
             // Save a file: path for use with ACTION_VIEW intents
             currentPhotoPath = absolutePath
+            Log.d("sdfhgsdf112", currentPhotoPath)
+            return mediaDir
         }
     }
 
@@ -379,5 +388,19 @@ class ProfileUpdateActivity : AppCompatActivity() {
         )
         return Uri.parse(path)
     }
-
 }
+
+//private fun createImageFile(): File {
+//    // Create an image file name
+//    val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
+//    val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+//    return File.createTempFile(
+//        "JPEG_${timeStamp}_", /* prefix */
+//        ".jpg", /* suffix */
+//        storageDir /* directory */
+//    ).apply {
+//        // Save a file: path for use with ACTION_VIEW intents
+//        currentPhotoPath = absolutePath
+//        Log.d("sdfhgsdf1",currentPhotoPath)
+//    }
+//}

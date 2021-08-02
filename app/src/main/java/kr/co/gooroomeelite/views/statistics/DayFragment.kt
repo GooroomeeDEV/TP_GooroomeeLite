@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.os.Environment
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -33,6 +34,7 @@ import kr.co.gooroomeelite.adapter.DailySubjectAdapter
 import kr.co.gooroomeelite.databinding.FragmentDayBinding
 import kr.co.gooroomeelite.viewmodel.SubjectViewModel
 import kr.co.gooroomeelite.views.statistics.share.ShareActivity
+import java.io.File
 import java.text.DateFormat
 import java.text.DecimalFormat
 import java.text.SimpleDateFormat
@@ -597,4 +599,24 @@ class DayFragment : Fragment() {
 //        ChartDatas("03:00", arrayListOf(0f)),
 //        ChartDatas("04:00", arrayListOf(0f)),
 //    )
+//}
+
+//private fun createImageFile(): File {
+//    // Create an image file name
+//    val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
+//    val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+//    return File.createTempFile(
+//        "JPEG_${timeStamp}_", /* prefix */
+//        ".jpg", /* suffix */
+//        storageDir /* directory */
+//    ).apply {
+//        // Save a file: path for use with ACTION_VIEW intents
+//        currentPhotoPath = absolutePath
+//    }
+////        val photoFile = File(
+////            PathUtil.getOutputDirectory(this), //외부 저장소 위치 지정
+////            SimpleDateFormat(
+////                FILENAME_FORMAT, Locale.KOREA
+////            ).format(System.currentTimeMillis()) + ".jpg").apply { currentPhotoPath = absolutePath  }
+////        return photoFile
 //}
