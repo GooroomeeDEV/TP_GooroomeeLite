@@ -32,6 +32,10 @@
 
 ---
 
+## **[ Development deadline 개발기한 ]**
+
+---
+
 ## **[ Develop Environment ]**
 
 - Language : Kotlin
