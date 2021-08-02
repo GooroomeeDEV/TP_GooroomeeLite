@@ -63,13 +63,8 @@
 
 ## **[ Role ]**
 
-- FirebaseData Management
-
-- Statistic Page
-
-- Share Page
-
-- Sticker Page
+- 은영
+- FirebaseData Management, Statistic Page, Share Page, Sticker Page
 
 ---
 ### **[ Feature Implementation ]**
