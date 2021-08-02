@@ -32,13 +32,10 @@
 
 ---
 
-대략적인 PDF 이미지 프리뷰
-
 ## **[ Develop Environment ]**
 
 - Language : Kotlin
 - Android Depolyment Target : Android 6.0(Mashmallow)
-
 ---
 
 ## **[ Library ]**
@@ -47,7 +44,7 @@
 - Firebasedatabase
 - Firebasestorage
 
- 2.   Layout
+ 2. Layout
 
 - [Glide](https://github.com/bumptech/glide)
 - [ScaleRatingBar](https://github.com/williamyyu/SimpleRatingBar)
@@ -61,7 +58,6 @@
 - [TedPermission](https://github.com/ParkSangGwon/TedPermission)
 - [ColorPicker](https://github.com/Dhaval2404/ColorPicker)
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
-
 
 ---
 
