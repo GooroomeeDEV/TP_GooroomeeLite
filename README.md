@@ -25,20 +25,21 @@
 
 ## **[ Preview ]**
 
- [GooroomeeLite PDF file]
+ [GooroomeeLite PDF file](https://github.com/GooroomeeDEV/TP_GooroomeeLite/blob/master/GOOROOMEELITE.pdf)
 ---
 
 ![1](https://user-images.githubusercontent.com/79887378/127723015-b90a1d22-5b8d-49b9-b600-e5ff83f2ec45.PNG)
 
 ---
 
-대략적인 PDF 이미지 프리뷰
+## **[ Development deadline 개발기한 ]**
+
+---
 
 ## **[ Develop Environment ]**
 
 - Language : Kotlin
 - Android Depolyment Target : Android 6.0(Mashmallow)
-
 ---
 
 ## **[ Library ]**
@@ -47,7 +48,7 @@
 - Firebasedatabase
 - Firebasestorage
 
- 2.   Layout
+ 2. Layout
 
 - [Glide](https://github.com/bumptech/glide)
 - [ScaleRatingBar](https://github.com/williamyyu/SimpleRatingBar)
@@ -62,18 +63,12 @@
 - [ColorPicker](https://github.com/Dhaval2404/ColorPicker)
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
 
-
 ---
 
 ## **[ Role ]**
 
-- FirebaseData Management
-
-- Statistic Page
-
-- Share Page
-
-- Sticker Page
+- 은영
+- FirebaseData Management, Statistic Page, Share Page, Sticker Page
 
 ---
 ### **[ Feature Implementation ]**
