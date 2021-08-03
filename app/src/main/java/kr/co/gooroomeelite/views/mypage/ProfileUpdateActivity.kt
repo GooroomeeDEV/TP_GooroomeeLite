@@ -357,25 +357,22 @@ class ProfileUpdateActivity : AppCompatActivity() {
 
     // 카메라로 촬영한 이미지를 파일로 저장해준다
     @Throws(IOException::class)
-    private fun createImageFile(): File? {
-        val mediaDir = externalMediaDirs.firstOrNull()?.let {
-            File(it, getString(R.string.app_name_picture)).apply {
-                mkdirs()
-            }
-        }
+    private fun createImageFile(): File {
+        // Create an image file name
         val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
-        val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        File.createTempFile(
+        val storageDir: File? = getExternalFilesDir(getString(R.string.app_mypage_picture_path))
+        return File.createTempFile(
             "JPEG_${timeStamp}_", /* prefix */
             ".jpg", /* suffix */
             storageDir /* directory */
         ).apply {
             // Save a file: path for use with ACTION_VIEW intents
             currentPhotoPath = absolutePath
-            Log.d("sdfhgsdf112", currentPhotoPath)
-            return mediaDir
+            Log.d("sdfhgsdf1",currentPhotoPath)
         }
     }
+
+
 
     private fun getImageUri(context: Context, inImage: Bitmap): Uri? {
         val bytes = ByteArrayOutputStream()
@@ -390,17 +387,3 @@ class ProfileUpdateActivity : AppCompatActivity() {
     }
 }
 
-//private fun createImageFile(): File {
-//    // Create an image file name
-//    val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
-//    val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-//    return File.createTempFile(
-//        "JPEG_${timeStamp}_", /* prefix */
-//        ".jpg", /* suffix */
-//        storageDir /* directory */
-//    ).apply {
-//        // Save a file: path for use with ACTION_VIEW intents
-//        currentPhotoPath = absolutePath
-//        Log.d("sdfhgsdf1",currentPhotoPath)
-//    }
-//}

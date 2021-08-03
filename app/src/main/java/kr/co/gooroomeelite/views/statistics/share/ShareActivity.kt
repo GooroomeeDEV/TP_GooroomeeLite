@@ -228,6 +228,8 @@ class ShareActivity : AppCompatActivity() {
             override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
                 val savedUri = outputFileResults.savedUri ?: Uri.fromFile(photoFile)
                 contentUri = savedUri //저장된 Uri를 넣어준다.
+                Log.d("sdfhgsdf1contentUri",contentUri.toString())
+                Log.d("sdfhgsdf1savedUri",savedUri.toString())
                 updateSavedImageContent()
             }
 
