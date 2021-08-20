@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">구루미 라이트</string>
-    //Picture Share//
+<!--    //Picture Share//-->
     <string name="app_name_picture">Pictures/구루미 라이트</string>
+
     <string name="app_content_path">Android/media/kr.co.gooroomeelite/Pictures/구루미 라이트</string>
-<!--    <string name="app_content_path">Pictures/구루미 라이트</string>-->
+    <string name="app_mypage_picture_path">/Pictures/구루미 라이트</string>
     <string name="launcher_name">구루미 라이트</string>
 
     <string name="title">나를 위한 공부 시간 관리</string>

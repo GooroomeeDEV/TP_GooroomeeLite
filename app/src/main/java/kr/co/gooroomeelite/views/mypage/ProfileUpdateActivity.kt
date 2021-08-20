@@ -339,12 +339,15 @@ class ProfileUpdateActivity : AppCompatActivity() {
                         Log.d("TAG", "그림파일 만드는도중 에러생김")
                         null
                     }
+                Log.d("sdfhgsdf1",photoFile.toString())
 
                 // 그림파일을 성공적으로 만들었다면 onActivityForResult로 보내기
                 photoFile?.also {
                     val photoUri: Uri = FileProvider.getUriForFile(
                         this, "kr.co.gooroomeelite.fileprovider", it
                     )
+                    Log.d("sdfhgsdf3",photoUri.toString())
+
                     takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
                     startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
                 }
@@ -357,7 +360,7 @@ class ProfileUpdateActivity : AppCompatActivity() {
     private fun createImageFile(): File {
         // Create an image file name
         val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
-        val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+        val storageDir: File? = getExternalFilesDir(getString(R.string.app_mypage_picture_path))
         return File.createTempFile(
             "JPEG_${timeStamp}_", /* prefix */
             ".jpg", /* suffix */
@@ -365,8 +368,11 @@ class ProfileUpdateActivity : AppCompatActivity() {
         ).apply {
             // Save a file: path for use with ACTION_VIEW intents
             currentPhotoPath = absolutePath
+            Log.d("sdfhgsdf1",currentPhotoPath)
         }
     }
+
+
 
     private fun getImageUri(context: Context, inImage: Bitmap): Uri? {
         val bytes = ByteArrayOutputStream()
@@ -379,5 +385,5 @@ class ProfileUpdateActivity : AppCompatActivity() {
         )
         return Uri.parse(path)
     }
-
 }
+

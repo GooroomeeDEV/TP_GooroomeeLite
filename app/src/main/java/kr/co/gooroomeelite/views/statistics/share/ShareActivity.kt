@@ -228,6 +228,8 @@ class ShareActivity : AppCompatActivity() {
             override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
                 val savedUri = outputFileResults.savedUri ?: Uri.fromFile(photoFile)
                 contentUri = savedUri //저장된 Uri를 넣어준다.
+                Log.d("sdfhgsdf1contentUri",contentUri.toString())
+                Log.d("sdfhgsdf1savedUri",savedUri.toString())
                 updateSavedImageContent()
             }
 
@@ -239,14 +241,14 @@ class ShareActivity : AppCompatActivity() {
         })
     }
 
-    //이미지 저장 후 다른 갤러리를 볼 수 있게 설정 다른 갤러리에 보여줄 수 있도록 설정
+    //이미지 저장 후 다른 갤러리를 볼 수 있게 설정 / 다른 갤러리에 보여줄 수 있도록 설정
     private fun updateSavedImageContent() {
         contentUri?.let{
             isCapturing = try{ //캡처가 완료한 상태
                 //파일 저장
                 val file = File(PathUtil.getPath(this,it) ?: throw FileNotFoundException())//현재 파일을 쓴 것을 가져온다.갤러리 어느 쪽에서 넣어서 쓸건지 
                 MediaScannerConnection.scanFile(this,arrayOf(file.path),arrayOf("image/jpg"),null)
-                Log.d("urirui",file.toString())
+                Log.d("urirui",file.toString()) //파일 경로
                 Log.d("urirui",MediaScannerConnection.scanFile(this,arrayOf(file.path),arrayOf("image/jpg"),null).toString())
 
                 val stickerIntent = Intent(this@ShareActivity,StickerActivity::class.java)

@@ -116,6 +116,7 @@ object PathUtil {
                 mkdirs()
             }
         }
+        Log.d("media",mediaDir.toString())
         return if (mediaDir != null && mediaDir.exists())
             mediaDir else filesDir
     }
